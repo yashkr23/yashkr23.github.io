@@ -1,0 +1,488 @@
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins';
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    z-index: 2;
+    top:0;
+    position: sticky;
+    display:flex;
+    background-color:white;
+    color:#111111;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.about{
+    margin: 3%;
+}
+.about{
+    margin:3%;
+    font-family: 'Poppins';
+}
+.cafe-name{
+    font-size: 2.5rem;
+    margin: 1rem 0.5rem;
+    color:rgb(223, 111, 6);
+}
+.navbar-links ul{
+    display:flex;
+    margin:0;
+    padding:0;
+}
+.navbar-links li{
+    list-style:none;
+}
+.navbar-links li a:hover{
+    color:rgb(223, 111, 6);
+}
+.navbar-links li a{
+    text-decoration:none;
+    font-size: 1.4em;
+    color:#111111;
+    display:block;
+    padding:1rem;
+}
+.toggle-button{
+    position:absolute;
+    top: 2.5rem;
+    right:1rem;
+    display:none;
+    flex-direction:column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+}
+.toggle-button .bar{
+    height:3px;
+    width:100%;
+    background-color:#111111;
+    border-radius:10px;
+}
+@media (max-width:625px)
+{
+    .toggle-button{
+        display:flex;
+    }
+    .navbar-links{
+        display:none;
+        width:100%;
+    }
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .navbar-links ul{
+        width:100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align:center;
+    }
+    .navbar-links li a{
+        padding:0.5rem 1rem;
+    }
+    .navbar-links.active{
+        display:flex;
+    }
+}
+.card img{
+    width:100%;
+}
+.card {
+    width: 31%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}  
+.container2 {
+    padding: 2px 16px;
+}
+.header-img{
+    max-width: 75%;
+    float: right;
+}
+.img-font{
+    display: inline-block;
+    vertical-align: middle;;
+    text-align: center;
+}
+.img-img{
+    display: inline-block;
+}
+header{
+    display: inline-block;
+    background-color: rgb(223, 111, 6);
+    color: white;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 0px;
+    padding: 2%;
+}
+.images1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0%;
+    padding: 0%;
+}
+.photo {
+    width: 19.5%;
+    padding: 0 10px;
+    height: 30%;
+}
+.images1 .photo{
+    width: 21%;
+    padding: 0 4% 0% 0%;
+    height: 30%;
+}
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+.chefs-card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1% 10%;
+
+}
+.chefs-card .card{
+    margin:2%;
+    padding:0.5%;
+    text-align: center;
+}
+.container2 p{
+    padding:0%;
+    margin:0%;
+}
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-text{
+    margin: 2% 2% 2% 5%;
+    max-width: 40%;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-img{
+    max-width: 1000px;
+}
+.chefs{
+    margin:5%;
+}
+#menu{
+    background-color: rgb(253, 246, 240);
+    padding:2%;
+}
+.container {
+    position: relative;
+    width: 100%;
+  }
+  .image_0{
+    max-width: 100%;
+  }
+  .image {
+    opacity: 1;
+    display: block;
+    width: 150px;
+    height: 210px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    max-width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.about{
+    justify-content: space-between;
+}
+.flexbox-item2-gap {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+.flexbox-item3{
+    max-width: 100%;
+    display:flex ;
+}
+.flexbox-item{
+  width:200px;
+  margin: 10px;
+}
+  .image2{
+    max-width: 100%;
+    border: 2px solid rgb(223, 111, 6);
+} 
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    display: flex;
+    color: white;
+    font-size: 16px;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 3em;
+    width: 2em;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+.card2{
+    width:23%;
+    padding: 1%;
+}
+.image2{
+    border-radius: 5px;
+}
+.container:hover .image2 {
+    opacity: 0.3;
+  }
+.flexbox-item-3{
+    flex-grow:50;
+    max-width: 49%;
+    padding: 0;
+}
+@media (max-width:1175px)
+{
+    .flexbox-item-3{
+        max-width: 82%;
+    }
+    .flexbox-item2{
+        max-width:82%;
+    }
+}
+.abt-img{
+    max-width: 31%;
+    padding: 2%;
+}
+.flexbox-container-2{
+    padding:0px;
+    margin: 0;
+}
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(223, 111, 6);
+  }
+  img {
+    max-width: 100%
+  }
+  .image {
+    flex-basis: 88%;
+  }
+  .text1 {
+    color:white;
+    font-size: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  @media (max-width:1175px)
+  {
+      .cont{
+        display: block;
+      }
+      .text1{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(223, 111, 6);
+      }
+  }
+  .button {
+    background-color: white;
+    border: none;
+    color: rgb(223, 111, 6);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px;
+  }
+  .carousel{
+    width: 100vw;
+    height:70vh;
+    position:relative;
+  }
+  .slide{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% 5%;
+    inset:0;
+    opacity:0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+    justify-content: space-around;
+  }
+  .slide > img{
+    display: inline-block;
+    width: 30%;
+    margin: 1.52%;
+    height: auto;
+    object-fit:cover; 
+    object-position: center;
+  }
+  .carousel > ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  .slide[data-active]{
+    opacity:1;
+    z-index: 1;
+    transition-delay: 0;
+  }
+  .carousel-button{
+    position: absolute;
+    background: none;
+    border: none;
+    z-index:2;
+    font-size:2rem;
+    top:50%;
+    transform: translateY(-50%);
+    cursor:pointer;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: rgba(0,0,0,0.1);
+
+  }
+  .img_box img{
+    width: 280px;
+    height: 250px;
+}
+.slider_container .containers{
+    padding:0 2%;
+    max-width: 1230px;
+    margin: 0 auto;
+    
+}
+.card_slider{
+    padding: 5% 10%;
+}
+.top-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: orange;
+    padding: 5px;
+  }
+.w3-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 35%;
+    margin: auto;
+}
+.w3-button{
+    border: none;
+    font-size: 1.2em;
+    color: black;
+    background-color: white;
+    margin: auto;
+    padding: 2%;
+}
+.w3-button:focus,.w3-button:hover{
+    color: rgb(223, 111, 6);
+}
+.menu-tab{
+    width:80%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.image4{
+    width: 200px;
+}
+
+  .container:hover .middle_1 {
+    opacity: 1;
+  }
+  .menu-tab .container .middle .text {
+    color: black;
+    font-size: 16px;
+  }
+  .menu-tab .container .middle.text{
+    width: 100%;
+    text-align: center;
+    margin:auto;
+  }
+  .menu-tab .card{
+    border-radius: 20px;
+  }
+  .menu-tab .container,.menu-tab .image{
+    border-radius: 20px;
+  }
+  .menu-tab .container:hover .image {
+    opacity: 0.2;
+  }
+  .special{
+    background-color: white;
+  }
+  .contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  footer .contents .fa-twitter,footer .contents .fa-facebook{
+    padding: 0;
+    background-color: white;
+    height: 30px;
+    width: 20px;
+    text-align: center;
+    color: rgb(223, 111, 6);
+    border-radius: 100px;
+    padding: 10px 10px 0px 10px;
+  }
+  footer .contents > div{
+    padding: 4%;
+  }
